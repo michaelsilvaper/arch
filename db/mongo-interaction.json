@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "interaction": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "objectid"
+        },
+        "createdat": {
+          "type": "timestamp"
+        },
+        "user": {
+          "type": "numeric"
+        },
+        "history": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "pageid": {
+                  "type": "objectid"
+                },
+                "createdat": {
+                  "type": "timestamp"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

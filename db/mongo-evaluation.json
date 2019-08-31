@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "evaluation": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "objectid"
+        },
+        "createdat": {
+          "type": "timestamp"
+        },
+        "conversationid": {
+          "type": "objectid"
+        },
+        "interactionid": {
+          "type": "objectid"
+        },
+        "grade": {
+          "type": "numeric"
+        }
+      }
+    }
+  }
+}
